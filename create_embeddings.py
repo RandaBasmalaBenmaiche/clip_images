@@ -7,7 +7,7 @@ from PIL import Image
 device = "cpu"
 
 model, preprocess = clip.load(
-    "ViT-B/32",
+    "ViT-L/14",
     device=device
 )
 

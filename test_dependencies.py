@@ -9,7 +9,7 @@ device = "cpu"
 print(f"Using device: {device}")
 
 # Load CLIP model
-model, preprocess = clip.load("ViT-B/32", device=device)
+model, preprocess = clip.load("ViT-L/14", device=device)
 print("✅ CLIP model loaded")
 
 # Create a dummy image (no file needed)
