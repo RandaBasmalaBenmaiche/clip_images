@@ -40,6 +40,16 @@ with open("embeddings.json") as f:
 query_image = "test.jpg"
 TOP_K = 3  # number of nearest neighbors used for the majority-vote prediction
 
+# Minimum similarity score required before trusting a prediction.
+# Below this, the query is treated as "unknown" -- not confidently
+# any of the existing classes. Cosine similarity ranges from -1 to 1;
+# for CLIP image embeddings, scores below ~0.5 usually mean the query
+# doesn't closely resemble anything in the database.
+# Tune this based on your own benchmark results: look at the similarity
+# scores of CORRECT matches vs scores for things that don't belong to
+# any class, and set the threshold somewhere between the two.
+CONFIDENCE_THRESHOLD = 0.5
+
 
 query_vector = get_embedding(query_image)
 
@@ -83,8 +93,12 @@ for r in results[:5]:
     )
 
 
+best_score = results[0][2]
+is_confident = best_score >= CONFIDENCE_THRESHOLD
+
+
 # --- Top-1 prediction (single best match, original behavior) ---
-top1_class = results[0][0]
+top1_class = results[0][0] if is_confident else "unknown"
 
 
 # --- Top-K majority vote prediction ---
@@ -104,6 +118,13 @@ else:
             sim_sum[cls] += sim
     topk_class = max(tied_classes, key=lambda cls: sim_sum[cls])
 
+if not is_confident:
+    topk_class = "unknown"
+
+
+print(f"\nBest match score: {best_score:.3f}  (threshold: {CONFIDENCE_THRESHOLD})")
+if not is_confident:
+    print("=> Below confidence threshold -- this doesn't look like a confident match to any known class.")
 
 print(f"\nTop-{TOP_K} votes:", dict(vote_counts))
 print("Predicted class (Top-1):", top1_class)
