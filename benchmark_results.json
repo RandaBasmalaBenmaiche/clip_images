@@ -1,9 +1,9 @@
 {
   "summary": {
-    "num_images": 41,
-    "num_classes": 8,
+    "num_images": 55,
+    "num_classes": 9,
     "overall_top1_accuracy": 1.0,
-    "overall_top3_accuracy": 0.9756,
+    "overall_top3_accuracy": 0.9818,
     "per_class": {
       "class1": {
         "count": 5,
@@ -42,6 +42,11 @@
       },
       "class8": {
         "count": 6,
+        "top1_accuracy": 1.0,
+        "top3_accuracy": 1.0
+      },
+      "class9": {
+        "count": 14,
         "top1_accuracy": 1.0,
         "top3_accuracy": 1.0
       }
@@ -948,6 +953,314 @@
         {
           "class": "class8",
           "similarity": 0.8607
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_001.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.9502
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9491
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9393
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_002.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.9462
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9451
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9373
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_003.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.9288
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9213
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9209
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_004.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.9608
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9494
+        },
+        {
+          "class": "class9",
+          "similarity": 0.944
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_005.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.944
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9404
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9373
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_006.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.9732
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9462
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9462
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_007.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.9732
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9538
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9482
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_008.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.929
+        },
+        {
+          "class": "class9",
+          "similarity": 0.926
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9217
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_009.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.929
+        },
+        {
+          "class": "class9",
+          "similarity": 0.92
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9002
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_010.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.9798
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9538
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9462
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_011.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.9798
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9608
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9491
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_012.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.9494
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9405
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9385
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_013.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.92
+        },
+        {
+          "class": "class9",
+          "similarity": 0.8733
+        },
+        {
+          "class": "class9",
+          "similarity": 0.861
+        }
+      ]
+    },
+    {
+      "image": "video_2026-06-28_00-59-37_frame_014.jpg",
+      "true_class": "class9",
+      "top1_prediction": "class9",
+      "top1_correct": true,
+      "top3_prediction": "class9",
+      "top3_correct": true,
+      "top_matches": [
+        {
+          "class": "class9",
+          "similarity": 0.9502
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9482
+        },
+        {
+          "class": "class9",
+          "similarity": 0.9459
         }
       ]
     }
